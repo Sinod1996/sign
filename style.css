@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-content {
+  position: relative;
+  background-color: #3A68B8;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  border-radius: 5px;
+}
+.modal .close-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 30px;
+  color: lightgray;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal .close-btn:hover {
+  color: darkgray;
+}
+.modal input {
+  width: 50%;
+  margin: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+}
+.modal h3 {
+  color: white;
+  font-size: 30px;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #0A121F;
+}
+header .container {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+header .container img {
+  width: 30px;
+  height: 30px;
+}
+header .container .div-img-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3A68B8;
+}
+header .container .nav-bar {
+  width: 60%;
+}
+header .container .ul-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header .container li {
+  list-style: none;
+}
+header .container a {
+  text-decoration: none;
+  color: white;
+}
+header .container button {
+  background-color: #3A68B8;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+header .container .fa-bars {
+  display: none;
+}
+header .container .fa-times {
+  display: none;
+}
+
+main {
+  width: 100%;
+}
+main .sec-one {
+  background-color: #09111E;
+}
+main .sec-one .parent {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .sec-one .parent .child {
+  width: 400px;
+  height: 400px;
+}
+main .sec-one .parent .child img {
+  width: 100%;
+  height: 100%;
+}
+main .sec-one .parent .child .div-text-btn {
+  width: 100%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+main .sec-one .parent .child .div-text-btn h3 {
+  color: #3A68B8;
+  margin-bottom: 20px;
+}
+main .sec-one .parent .child .div-text-btn h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+main .sec-one .parent .child .div-text-btn p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+main .sec-one .parent .child .div-text-btn button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3A68B8;
+  cursor: pointer;
+}
+main .sec-one .block-div {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .sec-one .block-div .item {
+  width: 150px;
+  height: 50px;
+}
+main .sec-one .block-div .item img {
+  width: 80%;
+  height: 80%;
+}
+main .sec-two {
+  width: 100%;
+  background-color: #020A18;
+}
+main .sec-two .parent {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .sec-two .parent .child {
+  width: 400px;
+  height: 400px;
+}
+main .sec-two .parent .child img {
+  width: 100%;
+  height: 100%;
+}
+main .sec-two .parent .child .div-text-btn {
+  width: 100%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+main .sec-two .parent .child .div-text-btn h3 {
+  color: #3A68B8;
+  margin-bottom: 20px;
+}
+main .sec-two .parent .child .div-text-btn h2 {
+  color: white;
+}
+main .sec-two .parent .child .div-text-btn h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+main .sec-two .parent .child .div-text-btn p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+main .sec-two .parent .child .div-text-btn button {
+  background-color: #3A68B8;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+main .section-three {
+  width: 100%;
+  background-color: #020A18;
+}
+main .section-three .sec-three-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .section-three .sec-three-cont .icon-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #101825;
+  border-radius: 5px;
+  width: 250px;
+  height: 300px;
+  color: white;
+  margin-bottom: 20px;
+}
+main .section-three .sec-three-cont .icon-div img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main .section-three .sec-three-cont .icon-div h3 {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main .section-three .sec-three-cont .icon-div p {
+  width: 200px;
+  margin: 0 auto;
+}
+main .sec-for {
+  width: 100%;
+  background-color: #020A18;
+}
+main .sec-for .parent {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  padding-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .sec-for .parent .child {
+  width: 400px;
+  height: 400px;
+}
+main .sec-for .parent .child img {
+  width: 100%;
+  height: 100%;
+}
+main .sec-for .parent .child .div-text-btn {
+  width: 100%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+main .sec-for .parent .child .div-text-btn h3 {
+  color: #3A68B8;
+  margin-bottom: 20px;
+}
+main .sec-for .parent .child .div-text-btn h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+main .sec-for .parent .child .div-text-btn h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+main .sec-for .parent .child .div-text-btn p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+main .sec-for .parent .child .div-text-btn button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3A68B8;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: #09111F;
+  color: white;
+  height: auto;
+}
+footer .foot-cont {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer nav {
+  width: 70%;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 30px;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+footer .div-p p {
+  font-size: 14px;
+  margin: 25px 0px;
+  opacity: 0.6;
+}
+footer .div-foot-cont-one {
+  margin: 0 auto;
+}
+footer .div-foot-cont-one img {
+  margin-bottom: 20px;
+}
+footer .div-foot-cont-one h3 {
+  color: #3A68B8;
+}
+footer .div-foot-cont-one p {
+  width: 200px;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+footer .div-foot-cont-two {
+  margin-top: 20px;
+}
+footer .div-foot-cont-two .div-flex {
+  margin-bottom: 20px;
+}
